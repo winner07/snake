@@ -1,0 +1,49 @@
+@import "normalize.css";
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+#game {
+  margin: 10px auto;
+}
+
+#game_canvas_wrap {
+  display: flex;
+  align-items: flex-start;
+}
+
+#game_canvas {
+  display: block;
+  box-sizing: content-box;
+  border: 1px solid #000;
+  background: #7aad00;
+}
+
+#game_canvas.grid {
+  background-image: url("../img/square.png");
+}
+
+#game_status {
+  width: 600px;
+  text-align: center;
+}
+
+#game_status p {
+  margin-top: 0;
+}
+
+#game_info {
+  margin-left: 16px;
+}
+
+#game_info table td:last-child {
+  font-weight: 700;
+}
